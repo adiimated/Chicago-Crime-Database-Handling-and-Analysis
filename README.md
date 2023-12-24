@@ -24,9 +24,9 @@ Data Manipulation: Pandas, a powerful Python library, was employed for subsequen
 
 ### Normalization
 
-Objective: The normalization process aimed at restructuring the original Crimes table into a more efficient database schema.
+Aimed at restructuring the original Crimes table to enhance efficiency, the normalization process divided the data into three distinct, interconnected tables: Location, Offense, and Crime.
 
-
+Schema:
 | Location | Offense | Crime |
 | ------------- | ------------- | ------------- |
 | Stores unique location details | Categorizes types of offenses | Main table linking to Location and Offense |

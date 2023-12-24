@@ -26,10 +26,11 @@ Data Manipulation: Pandas, a powerful Python library, was employed for subsequen
 
 Objective: The normalization process aimed at restructuring the original Crimes table into a more efficient database schema.
 
-Tables Created:
 
-- Location: Stores unique location details. Columns include location_id (primary key), block, and location_description.
-- Offense: Categorizes types of offenses. Columns include offense_id (primary key), iucr, primary_type, and description.
-- Crime: The main table linking to both Location and Offense. Columns include id (primary key), date, location_id, offense_id, arrest, domestic, district, ward, community_area, year.
+| Location | Offense | Crime |
+| ------------- | ------------- | ------------- |
+| Stores unique location details | Categorizes types of offenses | Main table linking to Location and Offense |
+| Columns: location_id (primary key), block, location_description | Columns: offense_id (primary key), iucr, primary_type, description | Columns: id (primary key), date, location_id, offense_id, arrest, domestic, district, ward, community_area, year |
+
 
 Advantages: This normalization minimized data redundancy and enhanced the efficiency of queries.

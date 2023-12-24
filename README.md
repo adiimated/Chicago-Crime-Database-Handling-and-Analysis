@@ -12,15 +12,15 @@ Data Manipulation: Pandas, a powerful Python library, was employed for subsequen
 
 ### Data Preprocessing
 
-Null Value Handling: Null values were identified and removed using df.dropna().
+1. Null Value Handling: Null values were identified and removed using df.dropna().
 
-Irrelevant Data Elimination: Columns irrelevant to the specific problem statement were dropped.
+2. Irrelevant Data Elimination: Columns irrelevant to the specific problem statement were dropped.
 
-Data Type Conversion:
+3. Data Type Conversion:
 - Location columns were transformed into categorical data types.
 - Floating-point data types were converted into integers.
 
-SQL Integration: The modified columns were then integrated into an SQL table using an executemany statement.
+4. SQL Integration: The modified columns were then integrated into an SQL table using an executemany statement.
 
 ### Normalization
 

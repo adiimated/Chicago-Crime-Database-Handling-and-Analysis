@@ -7,6 +7,7 @@ The crime data management system was developed to efficiently store, manage, and
 ### Data Import and Parsing
 
 Tools Used: Python's with and open commands were utilized for reading the CSV file line by line.
+
 Data Manipulation: Pandas, a powerful Python library, was employed for subsequent data manipulations.
 
 ### Data Preprocessing

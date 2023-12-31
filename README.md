@@ -39,4 +39,27 @@ Advantages: This normalization minimized data redundancy and enhanced the effici
 
 We used SQL JOIN operations to merge data from the Crime, Location, and Offense tables. This was essential to reassemble the separated data, which had been normalized for database efficiency, into a complete dataset. We specified join conditions using location_id and offense_id to ensure that related data from each table was accurately combined. By carefully selecting relevant columns through the SELECT statement, we included necessary details like crime ID, date, location, and offense type in our final dataset.
 
+```
+sql_query = '''
+    SELECT
+        c.crime_id,
+        c.date,
+        l.block,
+        o.iucr,
+        o.primary_type,
+        o.description,
+        l.location_description,
+        c.arrest,
+        c.domestic,
+        c.district,
+        c.ward,
+        c.community_area,
+        c.year
+    FROM
+        Crime c
+        JOIN Location l ON c.location_id = l.location_id
+        JOIN Offense o ON c.offense_id = o.offense_id;
+'''
+```
+
 Finally, we loaded the resulting comprehensive dataset into a Pandas DataFrame. This step was crucial as it transformed the data from a database-centric format into a format more conducive for in-depth analysis using Python tools. In essence, we reversed the database normalization to some extent, transforming the data from multiple related tables into a single, unified dataset ready for analysis.
